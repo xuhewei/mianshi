@@ -1,4 +1,4 @@
-package mianshi;
+package mianshi.javase;
 
 public class Test04 {
 	
@@ -11,5 +11,6 @@ public class Test04 {
 		if(str!=null&!"".equals(str)){
 			System.out.println("or");
 		}
+	
 	}
 }

@@ -1,11 +1,14 @@
-package mianshi;
+package mianshi.javase;
 
 import java.util.Scanner;
 
 public class Test02 {
-
+	
+	
 	public static void main(String[] args) {
-
+		
+		
+		
 		// 输入三个整数x,y,z，请把这三个数由小到大输出。
 		input fnc = new input();
 		int x = 0, y = 0, z = 0;

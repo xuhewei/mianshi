@@ -1,4 +1,4 @@
-package mianshi;
+package mianshi.javase;
 
 public class Test03 {
 	public static void main(String[] args){
