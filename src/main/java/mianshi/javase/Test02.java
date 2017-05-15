@@ -4,9 +4,7 @@ import java.util.Scanner;
 
 public class Test02 {
 	
-	
 	public static void main(String[] args) {
-		
 		
 		
 		// 输入三个整数x,y,z，请把这三个数由小到大输出。
