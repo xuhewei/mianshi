@@ -3,9 +3,7 @@ package note01.javase;
 import java.util.HashSet;
 import java.util.Set;
 /**
- * 
  * @author gut
- * 
  *
  */
 public class ArrayDemo1 {

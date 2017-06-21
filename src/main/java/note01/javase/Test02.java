@@ -1,6 +1,8 @@
 package note01.javase;
 
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Test02 {
@@ -17,7 +19,14 @@ public class Test02 {
 		y = fnc.input();
 		System.out.print("输入第三个数字：");
 		z = fnc.input();
-		if (x > y) {
+		//编译都不通过还创建什么,泛型不允许是基本数据类型
+		//List<int> list = new ArrayList<int>();
+		List<Integer> list = new ArrayList<Integer>();
+		list.add(x);
+		list.add(y);
+		list.add(z);
+		list.sort(null);
+		/*if (x > y) {
 			int t = x;
 			x = y;
 			y = t;
@@ -31,9 +40,9 @@ public class Test02 {
 			int t = y;
 			y = z;
 			z = t;
-		}
-
-		System.out.println("三个数字由小到大排列为： " + x + " " + y + " " + z);
+		}*/
+		System.out.println(list);
+		//System.out.println("三个数字由小到大排列为： " + x + " " + y + " " + z);
 	}
 }
 

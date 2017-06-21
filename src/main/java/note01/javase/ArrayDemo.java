@@ -16,7 +16,7 @@ public class ArrayDemo {
 
 		//insertSort(arr);
 		//printArray(arr);
-		ArrayDemo.bubble_sort(arr);
+		ArrayDemo.maopao(arr);
 		System.out.println(arr[0]+","+arr[1]+","+arr[2]);
 
 	}
@@ -62,7 +62,8 @@ public class ArrayDemo {
 	 */
 	public static void maopao(int[] a){
 		for(int i = 0;i<a.length;i++){
-			for(int j=0;j<a.length;j++){
+			//注意这里
+			for(int j=i;j<a.length;j++){
 				if(a[i]>a[j]){
 					int temp = a[i];
 					a[i]=a[j];
