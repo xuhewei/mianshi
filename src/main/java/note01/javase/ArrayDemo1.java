@@ -12,7 +12,7 @@ public class ArrayDemo1 {
 		String[] a = {"1","2","4","6","9","10","11"};
 		String[] b = {"1","2","4","6","8"};
 		
-		Set<String> set = ArrayDemo1.getDiff(a, b);
+		Set<String> set = ArrayDemo1.getSame(a, b);
 		System.out.println(set);
 		//foreach遍历set集合
 	    for(String str:set){
@@ -48,9 +48,17 @@ public class ArrayDemo1 {
 	 * @return
 	 */
 	public static Set<String> getSame(String[] a,String[] b){
-		Set<String> sameElementSet = new HashSet<String>();//存放a有b没有
-	     Set<String> tempSet = new HashSet<String>();       //存放b数组的元素集合
-	     //实现同上
+		Set<String> sameElementSet = new HashSet<String>();
+	     Set<String> tempSet = new HashSet<String>();       
+	     for (int i =0; i<b.length;i++) {
+				tempSet.add(b[i]);
+			}
+			
+			for (int i =0; i<a.length;i++) {
+				if(tempSet.add(a[i])==false){
+					sameElementSet.add(a[i]);
+				}
+			}
 	     return sameElementSet;
 	}
 }
