@@ -19,6 +19,9 @@ public class ArrayDemo1 {
 	    	System.out.println(str);
 	    }
 	    System.out.println("set.size>>>>>>>>>="+set.size());
+	    int[] arr = {1,5,9,4,3,6,7};
+	    int maxNumber = ArrayDemo1.getMaxNumber(arr);
+	    System.out.println("arr数组中的最大值是："+maxNumber);
 	}
 	/**
 	 * 找出两个集合a集合单独存在，不同于b数据的元素
@@ -60,5 +63,19 @@ public class ArrayDemo1 {
 				}
 			}
 	     return sameElementSet;
+	}
+	
+	/**
+	 * 找出数组元素的最大值
+	 */
+	public static int getMaxNumber(int [] arr){
+		if(arr==null&&arr.length==0){
+			return -1;
+		}
+		int max = arr[0];
+		for(int i=0;i<arr.length;i++){
+			max = max>arr[i]?max:arr[i];
+		}
+		return  max;
 	}
 }
