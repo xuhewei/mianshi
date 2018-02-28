@@ -17,7 +17,7 @@ public class ArrayDemo {
 		//insertSort(arr);
 		//printArray(arr);
 		ArrayDemo.maopao(arr);
-		System.out.println(arr[0]+","+arr[1]+","+arr[2]);
+		System.out.println(arr[0]+","+arr[1]+","+arr[2]+arr[3]+arr[4]);
 
 	}
 
