@@ -41,5 +41,6 @@ public class PaixuMaopao {
 		 for( b = 0; b<a.length;b++){
 			 System.out.print(a[b]);
 		 }*/
+		 System.out.println(5&6);
 	}
 }

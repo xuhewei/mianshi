@@ -25,7 +25,7 @@ public class Test02 {
 		list.add(x);
 		list.add(y);
 		list.add(z);
-		list.sort(null);
+		//list.sort(null);
 		/*if (x > y) {
 			int t = x;
 			x = y;
