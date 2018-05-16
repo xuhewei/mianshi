@@ -35,5 +35,4 @@ class D{
 		System.out.println("D's main method execute!");	
 	}
 }
-//这里会有好多的问题
 
