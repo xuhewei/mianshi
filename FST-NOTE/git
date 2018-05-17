@@ -1,0 +1,27 @@
+1.创建版本库     git init
+
+2.创建一个文件,添加到版本库
+	touch read.txt
+	git add read.txt
+	git commit -m "aa"  
+    修改read.txt后   执行
+    git add read.txt
+    git commit -m "bb"
+3.查看历史版本   
+	git log    查看提交历史，也可以加参数  git log --pretty=oneline
+	git reflog 看看命令历史
+4.回退到历史的某个版本
+	git reset --hard HEAD^ 回退到上一个版本
+	git reset --hard HEAD^^ 回退到上上个版本
+	git reset --hard xxxxxx 回到指定的版本
+5.撤销修改
+	v1想直接丢弃工作区的修改时 git checkout -- read.txt
+	v2文件通过git add read.txt 由工作区提交到了暂存区git reset HEAD read.txt,再去执行git checkout -- read.txt
+	v3修改内容有不想让别人看到，已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库。
+6.删除文件
+	git rm read.txt 删除文件从工作区
+	git commit -m "remove a file" 从版本库中删除
+	
+	误删后可通过，版本号找回 git reflog--> git reset --hard xxxx
+7.
+	   
