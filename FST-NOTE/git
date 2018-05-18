@@ -23,5 +23,18 @@
 	git commit -m "remove a file" 从版本库中删除
 	
 	误删后可通过，版本号找回 git reflog--> git reset --hard xxxx
-7.
+7.添加远程仓库
+	v1.使用githup网站作为远程仓库，首先在githup上创建一个repository
+	v2.创建本地仓库，learngit --执行>>$ git remote add origin git@github.com:michaelliao/learngit.git
+	                        --推送到远程仓库     $ git push -u origin master
+8.从远程仓库克隆到本地
+	$ git clone git@github.com:michaelliao/learngit.git
+9.分支管理
+	https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001375840038939c291467cc7c747b1810aab2fb8863508000
+	v1.创建分支dev并切换到分支  git branch dev -->git checkout dev  等同与 git checkout -b dev
+	v2.查看分支 git branch
+	v3.切换到master分支，git checkout master 合并分支 git merge dev
+	v4.删除分支  git branck -d dev
+10.解决冲突 ，
+	$ git log --graph --pretty=oneline --abbrev-commit命令可以看到分支合并图。                       
 	   
