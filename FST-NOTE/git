@@ -39,7 +39,7 @@
 	$ git log --graph --pretty=oneline --abbrev-commit命令可以看到分支合并图。       
 	
 	
-	
+	11111111111
 	
 	                
 	   
