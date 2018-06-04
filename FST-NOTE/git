@@ -36,5 +36,10 @@
 	v3.切换到master分支，git checkout master 合并分支 git merge dev
 	v4.删除分支  git branck -d dev
 10.解决冲突 ，
-	$ git log --graph --pretty=oneline --abbrev-commit命令可以看到分支合并图。                       
+	$ git log --graph --pretty=oneline --abbrev-commit命令可以看到分支合并图。       
+	
+	
+	
+	
+	                
 	   
